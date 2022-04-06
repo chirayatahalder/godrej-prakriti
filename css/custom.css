@@ -1,0 +1,943 @@
+/* nav */
+/* nav */
+/* banner */
+/* banner */
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+:root {
+  --primary-color: #0ba478;
+  --secondary-color: #3295f2;
+}
+.padtop {
+  padding-top: 60px;
+}
+p {
+  font-size: 16px;
+}
+.padbot {
+  padding-bottom: 60px;
+}
+h1 {
+  font-size: 50px;
+}
+.navbar {
+  padding: 0px !important;
+}
+.navbar .container {
+  border-bottom: 1px solid #fff;
+}
+.navbar .nav-item {
+  margin-right: 30px;
+}
+.navbar .navbar-nav {
+  margin-left: 10%;
+}
+.navbar .navbar-nav a {
+  padding: 20px 0;
+}
+.navbar .navbar-nav .active {
+  padding: 20px 0;
+}
+.navbar .d-flex button {
+  color: #FFF;
+  border: 1px solid #fff;
+  background: transparent;
+  border-radius: 0px;
+  font-size: 15px;
+  padding: 10px 20px;
+}
+.bg-light {
+  background: transparent !important;
+}
+.owl-theme button:hover {
+  background: transparent !important;
+}
+.navbar-light {
+  background: #0ba478 !important;
+}
+.navbar-light .navbar-nav .nav-link.active {
+  color: #fff;
+}
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+}
+.navbar-light .navbar-nav .nav-link:focus {
+  color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+.navbar-light .navbar-brand {
+  color: #fff;
+}
+.navbar-light .navbar-brand:focus {
+  color: #fff;
+}
+.navbar-light .navbar-brand:hover {
+  color: #fff;
+}
+.banner {
+  width: 100%;
+  background: url('../images/Godrej\ Prakriti\ Retreat_Waterbody.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.banner .container-fluid {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+  overflow: hidden;
+}
+.banner .col-md-6 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.banner .banner-left {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.banner .banner-left .banner-left-inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.banner .banner-left .banner-left-inner h1 {
+  color: #fff;
+  font-size: 160px;
+  line-height: 150px;
+}
+.banner .banner-left .banner-left-inner h1 strong span {
+  color: var(--secondary-color);
+}
+.banner .banner-left .banner-left-inner .btn-light {
+  padding-left: 10px;
+  border-radius: 0px;
+  margin-top: 65px !important;
+}
+.banner .banner-left .banner-left-inner .btn-light i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.banner .banner-left .banner-left-inner p {
+  color: #fff;
+  font-weight: bold;
+  opacity: 0.7;
+  padding-left: 10px;
+}
+.banner .banner-left .banner-left-inner a {
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--secondary-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.banner .banner-left .banner-left-inner a span i {
+  color: #fff;
+  display: inline-block;
+  padding-left: 10px;
+}
+.banner .banner-right {
+  width: 100%;
+  height: 100vh;
+}
+.begining {
+  width: 100%;
+  padding-top: 80px;
+}
+.begining .begining-left {
+  background: url('../images/Godrej\ Prakriti\ Retreat_Tower\ level\ entry\ and\ foyer\ view.jpg');
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+}
+.begining .begining-left .begining-left-inner p {
+  margin-bottom: 0px;
+  font-weight: bold;
+  padding: 0px 20px;
+}
+.begining .begining-left .begining-left-inner h2 {
+  margin-bottom: 0px;
+  font-weight: bold;
+  padding: 0px 20px;
+}
+.begining .begining-left .begining-left-inner .t-primary {
+  color: var(--primary-color);
+  padding-top: 20px;
+}
+.begining .begining-right .begining-right-inner p span i {
+  font-size: 20px;
+}
+.begining .begining-right .begining-right-inner .begining-right-card {
+  width: 100%;
+  margin-top: 20px;
+}
+.begining .begining-right .begining-right-inner .begining-right-card .number {
+  border-top: 1px solid grey;
+  padding-left: 70px;
+  padding-top: 10px;
+  position: relative;
+}
+.begining .begining-right .begining-right-inner .begining-right-card .number::before {
+  content: '';
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  background: #f3f4f9;
+  left: 0px;
+  top: 15px;
+  border-radius: 50%;
+}
+.begining .begining-right .begining-right-inner .begining-right-card .number .number-1 {
+  position: absolute;
+  left: 4%;
+  top: 37%;
+}
+.begining .begining-right .begining-right-inner .begining-right-card .number .number-1 i {
+  font-size: 30px;
+}
+.begining .begining-right .begining-right-inner .begining-right-card .number p {
+  font-size: 28px;
+  color: var(--primary-color);
+  padding: 0px;
+  margin: 0px;
+  font-weight: bold;
+}
+.begining .begining-right .begining-right-inner .begining-right-card .number span {
+  font-size: 15px;
+}
+.advantages {
+  width: 100%;
+}
+.advantages .container-fluid {
+  padding: 0 12px;
+}
+.advantages .container-fluid h2 {
+  padding-left: 160px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+.advantages .container-fluid .advantages-inner {
+  padding: 0 2px;
+  padding-left: 160px;
+  width: 100%;
+}
+.advantages .container-fluid .advantages-inner img {
+  height: 250px;
+}
+.advantages .container-fluid .advantages-inner h6 {
+  margin-top: 15px;
+}
+.residential {
+  width: 100%;
+  padding-top: 80px;
+}
+.residential .residential-left {
+  background: url('../images/Godrej\ Prakriti\ Retreat_3BHK\ Living\ room.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+.residential .residential-left .residential-left-inner p {
+  margin-bottom: 0px;
+  font-weight: bold;
+  padding: 0px 20px;
+}
+.residential .residential-left .residential-left-inner h2 {
+  margin-bottom: 0px;
+  font-weight: bold;
+  padding: 0px 20px;
+}
+.residential .residential-left .residential-left-inner .t-primary {
+  color: var(--primary-color);
+  padding-top: 20px;
+}
+.residential .residential-right p {
+  font-weight: bold;
+  opacity: 0.8;
+}
+.residential .residential-right .residential-right-inner .profile {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.residential .residential-right .residential-right-inner .profile .profile-left img {
+  width: 80px;
+  border-radius: 50%;
+}
+.residential .residential-right .residential-right-inner .profile .profile-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+}
+.residential .residential-right .residential-right-inner .profile .profile-right p {
+  font-size: 13px;
+  margin: 0px;
+}
+.residential .residential-right .residential-right-inner .profile .profile-right .name {
+  font-size: 18px;
+  font-weight: bold;
+}
+.gallery {
+  width: 100%;
+  background: #f0f1f6;
+  padding-top: 60px;
+}
+.gallery h2 {
+  color: var(--primary-color);
+}
+.gallery .gallery-outer img {
+  height: 450px;
+  width: auto;
+}
+.gallery .gallery-outer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+.gallery .gallery-outer ul li {
+  width: 20%;
+  text-align: center;
+}
+.gallery .gallery-outer ul li button {
+  border: none;
+  padding: 15px 30px;
+  background: none;
+  font-weight: bold;
+  opacity: 0.6;
+  width: 100%;
+}
+.gallery .gallery-outer ul li .active {
+  background-color: var(--primary-color);
+  color: #fff;
+  opacity: 1;
+  border-radius: 30px;
+}
+.gallery .gallery-outer .gallery-inner p {
+  margin: 20px 0;
+}
+.gallery .gallery-outer .gallery-inner .gallery-inner-mid .gallery-line {
+  border-bottom: 1px solid #000 !important;
+  padding: 0px;
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.gallery .gallery-outer .gallery-inner .gallery-inner-mid .gallery-line p {
+  margin: 10px;
+}
+.gallery .gallery-outer .gallery-inner .btn-success,
+.gallery .gallery-outer .gallery-inner .btn-light {
+  margin-top: 20px;
+  border-radius: 0px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.gallery .gallery-outer .gallery-inner .btn-light i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.services {
+  width: 100%;
+  padding-top: 80px;
+}
+.services .services-left {
+  background: url('../images/Godrej\ Prakriti\ Retreat_Living.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+}
+.services .services-left .services-left-inner p {
+  margin-bottom: 0px;
+  font-weight: bold;
+  padding: 0px 20px;
+}
+.services .services-left .services-left-inner h2 {
+  margin-bottom: 0px;
+  font-weight: bold;
+  padding: 0px 20px;
+}
+.services .services-left .services-left-inner .t-primary {
+  color: var(--primary-color);
+  padding-top: 20px;
+}
+.services .services-right .services-right-inner {
+  margin-top: 30px;
+}
+.services .services-right .services-right-inner button {
+  background: none;
+  border: none;
+}
+.services .services-right .services-right-inner p {
+  padding: 20px 0;
+}
+.services .services-right .services-right-inner p span i {
+  font-size: 20px;
+}
+.services .services-right .services-right-inner .services-right-card {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.services .services-right .services-right-inner .services-right-card .number {
+  padding-left: 70px;
+  position: relative;
+}
+.services .services-right .services-right-inner .services-right-card .number::before {
+  content: '';
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  background: #f3f4f9;
+  left: 0px;
+  top: 20px;
+  border-radius: 50%;
+}
+.services .services-right .services-right-inner .services-right-card .number .number-1 {
+  position: absolute;
+  left: 7%;
+  top: 35%;
+}
+.services .services-right .services-right-inner .services-right-card .number .number-1 i {
+  font-size: 30px;
+}
+.services .services-right .services-right-inner .services-right-card .number p {
+  font-size: 20px;
+  color: var(--primary-color);
+  padding: 0px;
+  margin: 0px;
+  font-weight: bold;
+}
+.services .services-right .services-right-inner .services-right-card .number span {
+  font-size: 15px;
+}
+.gallery-2 {
+  width: 100%;
+}
+.gallery-2 iframe {
+  width: 100%;
+  height: 600px;
+}
+.f-plan {
+  width: 100%;
+  background: #f0f1f6;
+  padding-top: 80px;
+}
+.f-plan h4 {
+  color: var(--primary-color);
+}
+.f-plan .f-plan-outer img {
+  height: 500px;
+}
+.f-plan .f-plan-outer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-right: 1px solid var(--primary-color);
+}
+.f-plan .f-plan-outer ul li {
+  width: 100%;
+  text-align: center;
+}
+.f-plan .f-plan-outer ul li button {
+  border: none;
+  padding: 15px 30px;
+  background: none;
+  font-weight: bold;
+  opacity: 0.6;
+  width: 100%;
+}
+.f-plan .f-plan-outer ul li .active {
+  background-color: var(--primary-color);
+  color: #fff;
+  opacity: 1;
+  border-radius: 4px 0 0 4px;
+}
+.location {
+  padding-top: 80px;
+  width: 100%;
+}
+.location .container-fluid {
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+  overflow: hidden;
+}
+.location h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+.location iframe {
+  height: 600px;
+}
+.contact-us {
+  width: 100%;
+  background: #f3f4f9;
+}
+.contact-us h2 {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+.contact-us .contact-us-left img {
+  border-radius: 50%;
+  width: 100px;
+  margin: 40px 0 20px;
+}
+.contact-us .contact-us-left p a {
+  text-decoration: none;
+  color: #000;
+}
+.contact-us .contact-us-right h4 {
+  padding-bottom: 20px;
+  color: #000;
+}
+.contact-us .contact-us-right form {
+  margin-top: 30px;
+  width: 80%;
+}
+.contact-us .contact-us-right form label {
+  font-size: 18px;
+  display: none;
+}
+.contact-us .contact-us-right form input,
+.contact-us .contact-us-right form textarea {
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  border-radius: 0px;
+  background: transparent;
+}
+.contact-us .contact-us-right form input:focus,
+.contact-us .contact-us-right form textarea:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-bottom: 1px solid #000;
+}
+.contact-us .contact-us-right form button {
+  background: #fff;
+  border-radius: 4px;
+  padding: 10px 50px;
+  color: #000;
+  border: none;
+  margin-top: 20px;
+}
+.contact-us .contact-us-right form button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.call-btn {
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+}
+.call-btn .what {
+  padding-right: 2px;
+}
+.call-btn .btn-secondary {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0;
+  padding: 10px 20px;
+  font-size: 15px;
+  display: inline-block;
+  overflow: hidden;
+}
+.call-btn .btn-secondary i {
+  font-size: 16px;
+}
+.call-btn .btn-secondary .la-whatsapp {
+  font-size: 22px;
+  margin-right: 1rem;
+}
+.call-btn .btn-secondary .la-whatsapp::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1rem;
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary-color);
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.float-end {
+  float: right !important;
+}
+.footer {
+  padding-top: 80px !important;
+  position: relative;
+  width: 100%;
+  background: #fff;
+}
+.footer .footer-outer h4 {
+  color: #000;
+  margin-bottom: 30px;
+}
+.footer .footer-outer a {
+  display: inline-block;
+  margin-right: 15px;
+}
+.footer .footer-outer a .bg {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #f3f4f9;
+}
+.footer .footer-outer a .bg i {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  font-size: 25px;
+  text-decoration: none;
+  color: #000;
+}
+.footer .footer-outer a .bg:hover {
+  background: var(--primary-color);
+}
+.footer .footer-outer a .bg:hover i {
+  color: #fff;
+}
+.footer .footer-outer p {
+  margin-bottom: 10px;
+  color: #000;
+}
+.footer .footer-outer p a {
+  text-decoration: none;
+  color: #000;
+}
+.footer .footer-outer .form-sub {
+  display: block;
+  margin-bottom: 20px;
+  width: 90%;
+  position: relative;
+}
+.footer .footer-outer .form-sub .form-control {
+  position: absolute;
+  border-radius: 0px;
+}
+.footer .footer-outer .form-sub .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.footer .footer-outer .form-sub button {
+  border-radius: 0px;
+  position: absolute;
+  right: 0px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 7px 20px;
+}
+.footer .footer-outer .form-sub button:hover {
+  background: var(--secondary-color);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.footer .footer-outer .p-sub {
+  margin-top: 90px;
+}
+.footer .footer-bottom {
+  width: 100%;
+  margin-top: 40px;
+  border-top: 2px solid #6c6c6c;
+}
+.footer .footer-bottom .footer-bottom-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+}
+.footer .footer-bottom .footer-bottom-inner p {
+  color: #000;
+  opacity: 0.6;
+}
+.modal .modal-content {
+  width: 900px !important;
+  margin: 0 auto;
+}
+.modal button {
+  border-radius: 0px;
+  padding: 10px 30px;
+}
+@media screen and (max-width: 426px) {
+  .navbar {
+    background: var(--primary-color) !important;
+    padding: 20px 0 !important;
+  }
+  .navbar .container {
+    border: none;
+  }
+  .navbar button {
+    border: 1px solid #fff !important;
+  }
+  .navbar button span {
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
+  }
+  .banner .banner-left {
+    height: 50vh;
+    position: unset;
+  }
+  .banner .banner-left .banner-left-inner {
+    width: 90%;
+  }
+  .banner .banner-left .banner-left-inner h1 {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .banner .banner-right {
+    height: 50vh;
+  }
+  .begining {
+    padding-top: 100px;
+  }
+  .begining .begining-left {
+    height: 30vh;
+  }
+  .begining .begining-right .begining-right-inner p {
+    text-align: justify;
+    margin: 15px 0;
+  }
+  .begining .begining-right .begining-right-inner .begining-right-card .number .number-1 {
+    left: 10%;
+    top: 30%;
+  }
+  .advantages h2 {
+    padding-left: 60px !important;
+  }
+  .advantages .advantages-inner {
+    padding-left: 60px !important;
+  }
+  .advantages .advantages-inner img {
+    height: 150px !important;
+  }
+  .residential {
+    padding-top: 100px;
+  }
+  .residential .residential-left {
+    height: 30vh;
+  }
+  .residential .residential-right {
+    margin: 20px 0 !important;
+  }
+  .collection .collection-left {
+    height: 30vh;
+    padding: 40px 0;
+  }
+  .collection .collection-left .collection-left-inner {
+    width: 90%;
+  }
+  .collection .collection-right .collection-right-inner .collection-right-inner-1 {
+    height: 100px;
+    width: 100px;
+  }
+  .collection .collection-right .collection-right-inner .collection-right-inner-2 {
+    height: 200px;
+    width: 200px;
+    top: 16%;
+  }
+  .collection .collection-right .collection-right-inner .collection-right-inner-3 {
+    height: 300px;
+    width: 300px;
+  }
+  .about-us .about-us-left .about-us-left-inner img:nth-child(2) {
+    float: left;
+  }
+  .about-us .about-us-right .about-us-right-inner {
+    padding: 60px 0 0 0;
+  }
+  .about-us .about-us-right .about-us-right-inner iframe {
+    height: 185px;
+  }
+  .amenities .amenities-card span i {
+    font-size: 65px;
+  }
+  .we-know {
+    height: auto;
+  }
+  .we-know .we-know-right {
+    height: auto !important;
+  }
+  .we-know .we-know-right .we-know-right-inner {
+    height: auto !important;
+    padding: 40px 20px !important;
+  }
+  .we-know .we-know-right .we-know-right-inner .owl-next span {
+    bottom: -360% !important;
+    right: -18% !important;
+  }
+  .gallery {
+    padding-top: 100px;
+  }
+  .gallery .gallery-outer img {
+    height: 230px;
+  }
+  .gallery .gallery-outer ul {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .gallery .gallery-outer ul li {
+    width: 48%;
+  }
+  .gallery-2 iframe {
+    height: 200px;
+  }
+  .f-plan {
+    padding-top: 100px;
+  }
+  .f-plan .f-plan-outer ul {
+    border: none;
+  }
+  .f-plan .f-plan-outer ul li .active {
+    border-radius: 4px;
+  }
+  .f-plan .f-plan-outer img {
+    height: auto;
+  }
+  .services {
+    padding-top: 100px;
+  }
+  .services .services-left {
+    height: 30vh;
+  }
+  .services .services-right .services-right-inner .services-right-card .number .number-1 {
+    position: absolute;
+    left: -2%;
+    top: 25%;
+  }
+  .services .services-right .services-right-inner .services-right-card .number {
+    padding-left: 35px;
+  }
+  .services .services-right .services-right-inner .services-right-card .number::before {
+    left: -12px;
+    height: 40px;
+    width: 40px;
+  }
+  .services .services-right .services-right-inner .services-right-card .number .number-1 i {
+    font-size: 25px;
+  }
+  .contact-us .contact-us-right {
+    margin: 20px 0;
+  }
+  .contact-us .contact-us-right h4 {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .contact-us .contact-us-right form {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .location iframe {
+    height: 300px;
+  }
+  .subscribe {
+    height: auto;
+  }
+  .subscribe .subscribe-outer {
+    width: 90%;
+    padding: 40px 0;
+  }
+  .subscribe .subscribe-outer .subscribe-inner {
+    width: 80%;
+  }
+  .subscribe .subscribe-outer .subscribe-inner .p-sub {
+    margin: 0px !important;
+  }
+  .subscribe .subscribe-outer .subscribe-inner .form-sub .form-control {
+    position: relative;
+  }
+  .subscribe .subscribe-outer .subscribe-inner .form-sub button {
+    position: relative;
+    margin: 10px 0;
+  }
+  .social .social-outer {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer .footer-outer {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .footer .footer-outer .form-sub {
+    margin: 10px auto;
+  }
+  .footer .footer-outer h4 {
+    margin-bottom: 0px;
+    margin-top: 30px;
+  }
+  .footer .footer-outer-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer .footer-outer-1 p {
+    padding: 10px 20px;
+  }
+  .footer .footer-bottom-inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}

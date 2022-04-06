@@ -1,0 +1,1838 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Line awesome -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ==========================================magnific popup css=============================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+        integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <title>Godrej</title>
+</head>
+
+<body>
+    <!-- <h1>Hello, world!</h1> -->
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo_godrej_properties.png" style="width: 150px;" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#overview">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#floor-plan">Floor Plan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#amenity">Amenities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#location">Location</a>
+                    </li>
+
+                </ul>
+                <div class="d-flex ms-auto">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">SCHEDULE A VISIT</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Get a Callback</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">First Name *</label>
+                            <input type="email" class="form-control" id="inputFirstName4" placeholder="First Name"
+                                required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Last Name *</label>
+                            <input type="password" class="form-control" id="inputlastName4" placeholder="Last Name"
+                                required>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Email *</label>
+                            <input type="Email" class="form-control" id="inputAddress" placeholder="Enter Your Email"
+                                required>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Phone Number *</label>
+                            <input type="number" class="form-control" id="inputAddress2" placeholder="Enter Your Number"
+                                required>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div> -->
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- banner -->
+    <div class="banner">
+        <div class="container-fluid g-0">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="banner-left">
+                        <div class="banner-left-inner">
+                            <p>Lorem, ipsum dolor.</p>
+                            <h1><strong>
+                                    Godrej Prakriti
+                                </strong></h1>
+                            <button type="button" class="btn btn-light"> <i class="las la-cube"></i>EXPLORE 3D
+                                VR</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="banner-right">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner -->
+
+
+    <!-- begining -->
+    <div class="begining padtop padbot" id="overview">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="begining-left">
+                        <div class="begining-left-inner">
+                            <h2 class="t-primary">
+                                OVERVIEW
+                            </h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="begining-right">
+                        <div class="begining-right-inner">
+
+                            <!-- <p><span><i class="las la-map-marker"></i></span> Lorem ipsum dolor sit, amet consectetur
+                                adipisicing.</p> -->
+                            <p>Godrej Prakriti is spread across 22.9 acres of lush greenery and is urbanized to the
+                                core. Infused with natural tranquility, 1, 2 and 3 BHK as per the various lifestyle
+                                preferences. Resort style living where 75% open space along with 4.68 acres of virgin
+                                green landscape evolving 1400+ old trees spread over 20000 sq ft of resort club with
+                                expansive lounge, swimming pool added with 6000 sq ft gazebo. Fully equipped multi gym
+                                with 20000 sq ft football ground and 12000 sq ft of children's playground. 871 mtrs of
+                                walking trails and 50000 sq ft of retail plaza fully operational. With the majestic
+                                Hooghly River close by, this complex is endowed with strong breeze and spectacular views
+                                - turning your home into a perfect retreat. </p>
+                            <div class="row mt-3">
+                                <div class="col-md-6 col-6">
+                                    <div class="begining-right-card">
+                                        <div class="number">
+                                            <div class="number-1">
+                                                <i class="las la-home"></i>
+                                            </div>
+                                            <p>1 BHK</p>
+                                            <span>612 Square Feet</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-6">
+                                    <div class="begining-right-card">
+                                        <div class="number">
+                                            <div class="number-1">
+                                                <i class="las la-home"></i>
+                                            </div>
+                                            <p>2 BHK</p>
+                                            <span> 895 to 1053 Square Feet</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-6">
+                                    <div class="begining-right-card">
+                                        <div class="number">
+                                            <div class="number-1">
+                                                <i class="las la-home"></i>
+                                            </div>
+                                            <p>3 BHK</p>
+                                            <span>1168 to 1264 Square Feet</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- begining -->
+
+
+
+    <!-- advantages -->
+    <div class="advantages padtop padbot">
+        <div class="container-fluid g-0">
+            <div class="row">
+                <div class="col-dm-12">
+                    <h2><strong>
+                            COLLECTION 2022
+                        </strong></h2>
+                    <div class="advantages-inner">
+                        <div class="owl-carousel popup-gallery-8 3-carousel advantages-1 owl-theme">
+                            <div class="item">
+                                <a href="images/Godrej Prakriti Retreat_Birdview.jpg">
+                                    <img class="img-fluid" src="images/Godrej Prakriti Retreat_Birdview.jpg" alt=""></a>
+                                <h6>Bird View</h6>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae cumque quidem
+                                    officiis sequi voluptatem a?</p> -->
+                            </div>
+                            <div class="item">
+                                <a href="images/Godrej Prakriti Retreat_Close view of Q Tower with driveway.jpg">
+                                    <img class="img-fluid"
+                                        src="images/Godrej Prakriti Retreat_Close view of Q Tower with driveway.jpg"
+                                        alt=""></a>
+                                <h6>Close View</h6>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae cumque quidem
+                                    officiis sequi voluptatem a?</p> -->
+                            </div>
+                            <div class="item">
+                                <a href="images/Godrej Prakriti Retreat_Dynamic Angle of landscape.jpg">
+                                    <img class="img-fluid"
+                                        src="images/Godrej Prakriti Retreat_Dynamic Angle of landscape.jpg" alt=""></a>
+                                <h6>Dynamic View</h6>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae cumque quidem
+                                    officiis sequi voluptatem a?</p> -->
+                            </div>
+                            <div class="item">
+                                <a href="images/Godrej Prakriti Retreat_Waterbody.jpg">
+                                    <img class="img-fluid" src="images/Godrej Prakriti Retreat_Waterbody.jpg"
+                                        alt=""></a>
+                                <h6>Water Bodies</h6>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae cumque quidem
+                                    officiis sequi voluptatem a?</p> -->
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- advantages -->
+
+
+    <!-- residential -->
+    <div class="residential padtop padbot" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="residential-left">
+                        <div class="residential-left-inner">
+                            <h2 class="t-primary">
+                                ABOUT US
+                            </h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="residential-right">
+
+                        <p>Established in 1897.
+                        </p>
+                        <p>5 Billion annual revenue
+                        </p>
+                        <p>1.1 Billion Globally use a Godrej product
+                        </p>
+                        <p>2nd most trusted indian brand
+                        </p>
+                        <p>2.8 billion brand valuation by interbrand
+                        </p>
+                        <p>Amongst india's most diversified & trusted conglomerates.
+                        </p>
+                        <p>
+                            Most trusted real estate brand in 2019 from the Brand Trust Report
+                        </p>
+                        <p>Real estate development is one of the key growth businesses for the group.
+                        </p>
+                        <p>Over 250 awards received in the past few years.
+                        </p>
+                        <!-- <div class="owl-carousel 3-carousel residential-1 owl-theme">
+                            <div class="item">
+                                <div class="residential-right-inner">
+                                    <h4>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laborum,
+                                        excepturi fugit molestias quasi facilis nulla voluptatibus culpa pariatur
+                                        exercitationem tenetur officiis dicta velit! Minus tempore neque veniam suscipit
+                                        voluptate natus, voluptatibus aperiam voluptas ipsa itaque harum accusantium aut
+                                        laborum?"</h4>
+
+                                    <div class="profile">
+                                        <div class="profile-left">
+                                            <span><img src="https://via.placeholder.com/128" class="img-fluid"
+                                                    alt=""></span>
+                                        </div>
+                                        <div class="profile-right">
+                                            <p class="name">Lorem, ipsum.</p>
+                                            <p>Lorem, ipsum.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="item">
+                                <div class="residential-right-inner">
+                                    <h4>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laborum,
+                                        excepturi fugit molestias quasi facilis nulla voluptatibus culpa pariatur
+                                        exercitationem tenetur officiis dicta velit! Minus tempore neque veniam suscipit
+                                        voluptate natus, voluptatibus aperiam voluptas ipsa itaque harum accusantium aut
+                                        laborum?"</h4>
+
+                                    <div class="profile">
+                                        <div class="profile-left">
+                                            <span><img src="https://via.placeholder.com/128" class="img-fluid"
+                                                    alt=""></span>
+                                        </div>
+                                        <div class="profile-right">
+                                            <p class="name">Lorem, ipsum.</p>
+                                            <p>Lorem, ipsum.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="item">
+                                <div class="residential-right-inner">
+                                    <h4>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laborum,
+                                        excepturi fugit molestias quasi facilis nulla voluptatibus culpa pariatur
+                                        exercitationem tenetur officiis dicta velit! Minus tempore neque veniam suscipit
+                                        voluptate natus, voluptatibus aperiam voluptas ipsa itaque harum accusantium aut
+                                        laborum?"</h4>
+
+                                    <div class="profile">
+                                        <div class="profile-left">
+                                            <span><img src="https://via.placeholder.com/128" class="img-fluid"
+                                                    alt=""></span>
+                                        </div>
+                                        <div class="profile-right">
+                                            <p class="name">Lorem, ipsum.</p>
+                                            <p>Lorem, ipsum.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="item">
+                                <div class="residential-right-inner">
+                                    <h4>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laborum,
+                                        excepturi fugit molestias quasi facilis nulla voluptatibus culpa pariatur
+                                        exercitationem tenetur officiis dicta velit! Minus tempore neque veniam suscipit
+                                        voluptate natus, voluptatibus aperiam voluptas ipsa itaque harum accusantium aut
+                                        laborum?"</h4>
+
+                                    <div class="profile">
+                                        <div class="profile-left">
+                                            <span><img src="https://via.placeholder.com/128" class="img-fluid"
+                                                    alt=""></span>
+                                        </div>
+                                        <div class="profile-right">
+                                            <p class="name">Lorem, ipsum.</p>
+                                            <p>Lorem, ipsum.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="item">
+                                <div class="residential-right-inner">
+                                    <h4>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laborum,
+                                        excepturi fugit molestias quasi facilis nulla voluptatibus culpa pariatur
+                                        exercitationem tenetur officiis dicta velit! Minus tempore neque veniam suscipit
+                                        voluptate natus, voluptatibus aperiam voluptas ipsa itaque harum accusantium aut
+                                        laborum?"</h4>
+
+                                    <div class="profile">
+                                        <div class="profile-left">
+                                            <span><img src="https://via.placeholder.com/128" class="img-fluid"
+                                                    alt=""></span>
+                                        </div>
+                                        <div class="profile-right">
+                                            <p class="name">Lorem, ipsum.</p>
+                                            <p>Lorem, ipsum.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="item">
+                                <div class="residential-right-inner">
+                                    <h4>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laborum,
+                                        excepturi fugit molestias quasi facilis nulla voluptatibus culpa pariatur
+                                        exercitationem tenetur officiis dicta velit! Minus tempore neque veniam suscipit
+                                        voluptate natus, voluptatibus aperiam voluptas ipsa itaque harum accusantium aut
+                                        laborum?"</h4>
+
+                                    <div class="profile">
+                                        <div class="profile-left">
+                                            <span><img src="https://via.placeholder.com/128" class="img-fluid"
+                                                    alt=""></span>
+                                        </div>
+                                        <div class="profile-right">
+                                            <p class="name">Lorem, ipsum.</p>
+                                            <p>Lorem, ipsum.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="item">
+                                <div class="residential-right-inner">
+                                    <h4>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laborum,
+                                        excepturi fugit molestias quasi facilis nulla voluptatibus culpa pariatur
+                                        exercitationem tenetur officiis dicta velit! Minus tempore neque veniam suscipit
+                                        voluptate natus, voluptatibus aperiam voluptas ipsa itaque harum accusantium aut
+                                        laborum?"</h4>
+
+                                    <div class="profile">
+                                        <div class="profile-left">
+                                            <span><img src="https://via.placeholder.com/128" class="img-fluid"
+                                                    alt=""></span>
+                                        </div>
+                                        <div class="profile-right">
+                                            <p class="name">Lorem, ipsum.</p>
+                                            <p>Lorem, ipsum.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="item">
+                                <div class="residential-right-inner">
+                                    <h4>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laborum,
+                                        excepturi fugit molestias quasi facilis nulla voluptatibus culpa pariatur
+                                        exercitationem tenetur officiis dicta velit! Minus tempore neque veniam suscipit
+                                        voluptate natus, voluptatibus aperiam voluptas ipsa itaque harum accusantium aut
+                                        laborum?"</h4>
+
+                                    <div class="profile">
+                                        <div class="profile-left">
+                                            <span><img src="https://via.placeholder.com/128" class="img-fluid"
+                                                    alt=""></span>
+                                        </div>
+                                        <div class="profile-right">
+                                            <p class="name">Lorem, ipsum.</p>
+                                            <p>Lorem, ipsum.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- residential -->
+
+
+
+
+    <!-- gallery -->
+    <div class="gallery padtop padbot" id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-left">
+                    <!-- <p>Lorem, ipsum dolor.</p>  -->
+                    <h2><strong>
+                            GALLERY
+                        </strong></h2>
+                </div>
+            </div>
+            <div class="gallery-outer">
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <div class="tab-btn-list">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="tab-btn active" id="pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                        aria-selected="true">
+                                        Elevation
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="tab-btn " id="pills-3b-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-3b" type="button" role="tab" aria-controls="pills-3b"
+                                        aria-selected="false">Living Room</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="tab-btn " id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">Dining Room</button>
+                                </li>
+
+                                <li class="nav-item" role="presentation">
+                                    <button class="tab-btn " id="pills-contact-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-contact" type="button" role="tab"
+                                        aria-controls="pills-contact" aria-selected="false">Bedroom</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="tab-btn " id="pills-c-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-c" type="button" role="tab" aria-controls="pills-c"
+                                        aria-selected="false">Toilet</button>
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="tab-content big-flor-tab" id="pills-tabContent">
+
+
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+
+
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="gallery-inner">
+                                            <h3>
+                                                <strong>
+                                                    52.4 m<sup>2</sup>
+                                                </strong>
+                                            </h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minus
+                                                maiores et eveniet harum perspiciatis.</p>
+                                            <div class="gallery-inner-mid">
+                                                <div class="gallery-line">
+                                                    <p>Location</p>
+                                                    <p>Residence B2</p>
+                                                </div>
+                                                <div class="gallery-line">
+                                                    <p>Location</p>
+                                                    <p>Residence B2</p>
+                                                </div>
+                                                <div class="gallery-line">
+                                                    <p>Location</p>
+                                                    <p>Residence B2</p>
+                                                </div>
+                                                <div class="gallery-line">
+                                                    <p>Location</p>
+                                                    <p>Residence B2</p>
+                                                </div>
+                                                <div class="gallery-line">
+                                                    <p>Location</p>
+                                                    <p>Residence B2</p>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">I AM INTERESTED</button>
+                                            <button type="button" class="btn btn-light">EXPLORE IN VR</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="owl-carousel popup-gallery-3 gallery-1 owl-theme">
+                                            <div class="item">
+                                                <a href="images/Godrej Prakriti Retreat_Birdview.jpg">
+                                                    <img class="img-fluid"
+                                                        src="images/Godrej Prakriti Retreat_Birdview.jpg" alt=""></a>
+                                            </div>
+                                            <div class="item">
+                                                <a
+                                                    href="images/Godrej Prakriti Retreat_Close view of Q Tower with driveway.jpg">
+                                                    <img class="img-fluid"
+                                                        src="images/Godrej Prakriti Retreat_Close view of Q Tower with driveway.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="images/Godrej Prakriti Retreat_Dynamic Angle of landscape.jpg">
+                                                    <img class="img-fluid"
+                                                        src="images/Godrej Prakriti Retreat_Dynamic Angle of landscape.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="images/Godrej Prakriti Retreat_Waterbody.jpg">
+                                                    <img class="img-fluid"
+                                                        src="images/Godrej Prakriti Retreat_Waterbody.jpg" alt=""></a>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+
+
+                            <div class="tab-pane fade" id="pills-3b" role="tabpanel" aria-labelledby="pills-3b">
+
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="gallery-inner">
+                                            <h3>
+                                                <strong>
+                                                    52.4 m<sup>2</sup>
+                                                </strong>
+                                            </h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minus
+                                                maiores et eveniet harum perspiciatis.</p>
+                                            <div class="gallery-inner-mid">
+                                                <div class="gallery-line">
+                                                    <p>Location</p>
+                                                    <p>Residence B2</p>
+                                                </div>
+                                                <div class="gallery-line">
+                                                    <p>Location</p>
+                                                    <p>Residence B2</p>
+                                                </div>
+                                                <div class="gallery-line">
+                                                    <p>Location</p>
+                                                    <p>Residence B2</p>
+                                                </div>
+                                                <div class="gallery-line">
+                                                    <p>Location</p>
+                                                    <p>Residence B2</p>
+                                                </div>
+                                                <div class="gallery-line">
+                                                    <p>Location</p>
+                                                    <p>Residence B2</p>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">I AM INTERESTED</button>
+                                            <button type="button" class="btn btn-light">EXPLORE IN VR</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="owl-carousel popup-gallery-3 gallery-1 owl-theme">
+                                            <div class="item">
+                                                <a href="images/Godrej Prakriti Retreat_3BHK Living room.jpg">
+                                                    <img class="img-fluid"
+                                                        src="images/Godrej Prakriti Retreat_3BHK Living room.jpg" alt=""></a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="images/Godrej Prakriti Retreat_Dinner.jpeg">
+                                                    <img class="img-fluid"
+                                                        src="images/Godrej Prakriti Retreat_Dinner.jpeg" alt=""></a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="images/Godrej Prakriti Retreat_Guest meeting rooms in stilt level.jpg">
+                                                    <img class="img-fluid"
+                                                        src="images/Godrej Prakriti Retreat_Guest meeting rooms in stilt level.jpg" alt=""></a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="images/Godrej Prakriti Retreat_Living Room.jpg">
+                                                    <img class="img-fluid"
+                                                        src="images/Godrej Prakriti Retreat_Living Room.jpg" alt=""></a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="images/Godrej Prakriti Retreat_Living Room_2.jpg">
+                                                    <img class="img-fluid"
+                                                        src="images/Godrej Prakriti Retreat_Living Room_2.jpg" alt=""></a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="images/Godrej Prakriti Retreat_Living.jpeg">
+                                                    <img class="img-fluid"
+                                                        src="images/Godrej Prakriti Retreat_Living.jpeg" alt=""></a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="images/Godrej Prakriti Retreat_Living1.jpeg">
+                                                    <img class="img-fluid"
+                                                        src="images/Godrej Prakriti Retreat_Living1.jpeg" alt=""></a>
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="gallery-inner">
+                                            <h3>
+                                                <strong>
+                                                    52.4 m<sup>2</sup>
+                                                </strong>
+                                            </h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minus
+                                                maiores et eveniet harum perspiciatis.</p>
+                                            <div class="gallery-inner-mid">
+                                                <div class="gallery-line">
+                                                    <p>Location</p>
+                                                    <p>Residence B2</p>
+                                                </div>
+                                                <div class="gallery-line">
+                                                    <p>Location</p>
+                                                    <p>Residence B2</p>
+                                                </div>
+                                                <div class="gallery-line">
+                                                    <p>Location</p>
+                                                    <p>Residence B2</p>
+                                                </div>
+                                                <div class="gallery-line">
+                                                    <p>Location</p>
+                                                    <p>Residence B2</p>
+                                                </div>
+                                                <div class="gallery-line">
+                                                    <p>Location</p>
+                                                    <p>Residence B2</p>
+                                                </div>
+                                            </div> 
+                                            <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">I AM INTERESTED</button>
+                                            <button type="button" class="btn btn-light">EXPLORE IN VR</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="owl-carousel popup-gallery-3 gallery-1 owl-theme">
+                                            <div class="item">
+                                                <a href="images/Godrej Prakriti Retreat_Dinner.jpeg">
+                                                    <img class="img-fluid"
+                                                        src="images/Godrej Prakriti Retreat_Dinner.jpeg" alt=""></a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="images/Godrej Prakriti Retreat_Guest meeting rooms in stilt level.jpg">
+                                                    <img class="img-fluid"
+                                                        src="images/Godrej Prakriti Retreat_Guest meeting rooms in stilt level.jpg" alt=""></a>
+                                            </div>
+                                            
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+                            </div>
+
+
+
+
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">
+
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="gallery-inner">
+                                            <h3>
+                                                <strong>
+                                                    52.4 m<sup>2</sup>
+                                                </strong>
+                                            </h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minus
+                                                maiores et eveniet harum perspiciatis.</p>
+                                            <div class="gallery-inner-mid">
+                                                <div class="gallery-line">
+                                                    <p>Location</p>
+                                                    <p>Residence B2</p>
+                                                </div>
+                                                <div class="gallery-line">
+                                                    <p>Location</p>
+                                                    <p>Residence B2</p>
+                                                </div>
+                                                <div class="gallery-line">
+                                                    <p>Location</p>
+                                                    <p>Residence B2</p>
+                                                </div>
+                                                <div class="gallery-line">
+                                                    <p>Location</p>
+                                                    <p>Residence B2</p>
+                                                </div>
+                                                <div class="gallery-line">
+                                                    <p>Location</p>
+                                                    <p>Residence B2</p>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">I AM INTERESTED</button>
+                                            <button type="button" class="btn btn-light">EXPLORE IN VR</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="owl-carousel popup-gallery-3 gallery-1 owl-theme">
+                                            <div class="item">
+                                                <a href="images/Godrej Prakriti Retreat_3BHK Master bedroom.jpg">
+                                                    <img class="img-fluid" src="images/Godrej Prakriti Retreat_3BHK Master bedroom.jpg" alt=""></a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="images/Godrej Prakriti Retreat_Bed Room.jpg">
+                                                    <img class="img-fluid" src="images/Godrej Prakriti Retreat_Bed Room.jpg" alt=""></a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="images/Godrej Prakriti Retreat_Bed4.jpeg">
+                                                    <img class="img-fluid" src="images/Godrej Prakriti Retreat_Bed4.jpeg" alt=""></a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="images/Godrej Prakriti Retreat_Bed5.jpeg">
+                                                    <img class="img-fluid" src="images/Godrej Prakriti Retreat_Bed5.jpeg" alt=""></a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="images/Godrej Prakriti Retreat_Bedroom.jpeg">
+                                                    <img class="img-fluid" src="images/Godrej Prakriti Retreat_Bedroom.jpeg" alt=""></a>
+                                            </div>
+                                            
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="tab-pane fade" id="pills-c" role="tabpanel" aria-labelledby="pills-c-tab">
+
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="gallery-inner">
+                                            <h3>
+                                                <strong>
+                                                    52.4 m<sup>2</sup>
+                                                </strong>
+                                            </h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minus
+                                                maiores et eveniet harum perspiciatis.</p>
+                                            <div class="gallery-inner-mid">
+                                                <div class="gallery-line">
+                                                    <p>Location</p>
+                                                    <p>Residence B2</p>
+                                                </div>
+                                                <div class="gallery-line">
+                                                    <p>Location</p>
+                                                    <p>Residence B2</p>
+                                                </div>
+                                                <div class="gallery-line">
+                                                    <p>Location</p>
+                                                    <p>Residence B2</p>
+                                                </div>
+                                                <div class="gallery-line">
+                                                    <p>Location</p>
+                                                    <p>Residence B2</p>
+                                                </div>
+                                                <div class="gallery-line">
+                                                    <p>Location</p>
+                                                    <p>Residence B2</p>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">I AM INTERESTED</button>
+                                            <button type="button" class="btn btn-light">EXPLORE IN VR</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="owl-carousel popup-gallery-3 gallery-1 owl-theme">
+                                            <div class="item">
+                                                <a href="images/Godrej Prakriti Retreat_Toilet.jpg">
+                                                    <img class="img-fluid" src="images/Godrej Prakriti Retreat_Toilet.jpg" alt=""></a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="images/Godrej Prakriti Retreat_Toilet2.jpeg">
+                                                    <img class="img-fluid" src="images/Godrej Prakriti Retreat_Toilet2.jpeg" alt=""></a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="images/Godrej Prakriti Retreat_Toilet4.jpeg">
+                                                    <img class="img-fluid" src="images/Godrej Prakriti Retreat_Toilet4.jpeg" alt=""></a>
+                                            </div>
+                                            
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- gallery -->
+
+
+
+    <!-- services -->
+    <div class="services padtop padbot" id="amenity">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="services-left">
+                        <div class="services-left-inner">
+                            <h2 class="t-primary">
+                                AMENITIES
+                            </h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="services-right">
+                        <div class="services-right-inner">
+                            <!-- <h4><strong>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis accusamus
+                                    corrupti nisi ex aperiam obcaecati!
+                                </strong></h4> -->
+                            <div class="row justify-content-center">
+                                <div class="col-md-4 col-6">
+                                    <div class="services-right-card">
+                                        <div class="number">
+                                            <div class="number-1">
+                                                <i class="las la-store-alt"></i>
+                                            </div>
+                                            <p>Retail Plaza</p>
+                                            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6">
+                                    <div class="services-right-card">
+                                        <div class="number">
+                                            <div class="number-1">
+                                                <i class="las la-landmark"></i>
+                                            </div>
+                                            <p>Community Hall</p>
+                                            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6">
+                                    <div class="services-right-card">
+                                        <div class="number">
+                                            <div class="number-1">
+                                                <i class="las la-door-open"></i>
+                                            </div>
+                                            <p>Guest Room</p>
+                                            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6">
+                                    <div class="services-right-card">
+                                        <div class="number">
+                                            <div class="number-1">
+                                                <i class="las la-dumbbell"></i>
+                                            </div>
+                                            <p>GYM</p>
+                                            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6">
+                                    <div class="services-right-card">
+                                        <div class="number">
+                                            <div class="number-1">
+                                                <i class="las la-database"></i>
+                                            </div>
+                                            <p>Badminton Court</p>
+                                            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6">
+                                    <div class="services-right-card">
+                                        <div class="number">
+                                            <div class="number-1">
+                                                <i class="las la-spa"></i>
+                                            </div>
+                                            <p>Meditation Hall</p>
+                                            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6">
+                                    <div class="services-right-card">
+                                        <div class="number">
+                                            <div class="number-1">
+                                                <i class="las la-glass-martini-alt"></i>
+                                            </div>
+                                            <p>Lounge</p>
+                                            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6">
+                                    <div class="services-right-card">
+                                        <div class="number">
+                                            <div class="number-1">
+                                                <i class="las la-shapes"></i>
+                                            </div>
+                                            <p>Kids Play Room</p>
+                                            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6">
+                                    <div class="services-right-card">
+                                        <div class="number">
+                                            <div class="number-1">
+                                                <i class="las la-skating"></i>
+                                            </div>
+                                            <p>Play Ground</p>
+                                            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center collapse multi-collapse" id="multiCollapseExample15">
+
+                                <div class="col-md-4 col-6">
+                                    <div class="services-right-card">
+                                        <div class="number">
+                                            <div class="number-1">
+                                                <i class="las la-chair"></i>
+                                            </div>
+                                            <p>Outdoor Sitting</p>
+                                            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6">
+                                    <div class="services-right-card">
+                                        <div class="number">
+                                            <div class="number-1">
+                                                <i class="las la-theater-masks"></i>
+                                            </div>
+                                            <p>Open Air Theatre</p>
+                                            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6">
+                                    <div class="services-right-card">
+                                        <div class="number">
+                                            <div class="number-1">
+                                                <i class="las la-seedling"></i>
+                                            </div>
+                                            <p>Garden</p>
+                                            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6">
+                                    <div class="services-right-card">
+                                        <div class="number">
+                                            <div class="number-1">
+                                                <i class="las la-swimming-pool"></i>
+                                            </div>
+                                            <p>Water Bodies</p>
+                                            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6">
+                                    <div class="services-right-card">
+                                        <div class="number">
+                                            <div class="number-1">
+                                                <i class="las la-church"></i>
+                                            </div>
+                                            <p>Ancient Temple</p>
+                                            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6">
+                                    <div class="services-right-card">
+                                        <div class="number">
+                                            <div class="number-1">
+                                                <i class="las la-dumpster-fire"></i>
+                                            </div>
+                                            <p>Barbeque Pit</p>
+                                            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <button type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample15"
+                                aria-expanded="false" aria-controls="multiCollapseExample15"><i
+                                    class="las la-angle-down"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- gallery-2 -->
+    <div class="gallery-2 padtop padbot">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/W0BxZ9f0c_M"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- gallery-2 -->
+
+
+
+    <!-- f-plan -->
+    <div class="f-plan padtop padbot" id="floor-plan">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-left">
+                    <!-- <p>Lorem, ipsum dolor.</p>  -->
+                    <h4><strong>
+                            FLOOR PLAN
+                        </strong></h4>
+                </div>
+            </div>
+            <div class="f-plan-outer">
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="tab-btn-list">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="tab-btn active" id="pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-home"
+                                        aria-selected="true">
+                                        Master Plan
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="tab-btn " id="pills-3b-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-3b"
+                                        aria-selected="false">Floor Plan</button>
+                                </li>
+
+                            </ul>
+                        </div>
+
+
+
+
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="tab-content popup-gallery-11 big-flor-tab" id="pills-tabContent">
+
+
+                            <div class="tab-pane fade show active" id="pills-1" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+
+
+                                <a href="images/GODREJ PRAKRITI MASTERPLAN.jpg">
+                                    <img class="img-fluid" src="images/GODREJ PRAKRITI MASTERPLAN.jpg" alt=""></a>
+
+
+
+                            </div>
+
+
+
+
+                            <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-3b">
+
+
+
+                                <a href="images/godrej-prakriti-kailash-kapilash.jpeg">
+                                    <img class="img-fluid" src="images/godrej-prakriti-kailash-kapilash.jpeg"
+                                        alt=""></a>
+
+
+
+
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- f-plan -->
+
+
+
+
+
+
+
+
+    <!-- location -->
+    <div class="location padtop padbot" id="location">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-left">
+                    <h2><strong>
+                            Location
+                        </strong></h2>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid g-0">
+            <div class="row mt-2">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14722.128216672976!2d88.3782698!3d22.7084575!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfbd842124d51960!2sGodrej%20Prakriti%2C%20Kolkata!5e0!3m2!1sen!2sin!4v1649244021332!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- location -->
+
+
+    <!-- contact us -->
+    <div class="contact-us padtop padbot">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact-us-left">
+                        <h2>CONTACT AGENT</h2>
+                        <img src="https://via.placeholder.com/128" class="img-fluid" alt="">
+                        <h5>
+                            <strong>
+                                A. Robertson
+                            </strong>
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, pariatur.</p>
+                        <p><strong>Phone</strong> : <a href="tel:+91 82878 82878">+91 828 788 2878</a></p>
+                        <p><strong>Email</strong> : <a href="mailto">admin@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="contact-us-right">
+                        <h4>
+                            <strong>
+                                Subscribe for Information
+                            </strong>
+                        </h4>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="inputName4" class="form-label">Full Name</label>
+                                        <input type="email" class="form-control" placeholder="Your Full Name"
+                                            id="inputName4">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputPassword4" class="form-label">Password</label>
+                                        <input type="tel" placeholder="Your Phone Number" class="form-control"
+                                            id="inputPassword4">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="inputAddress" class="form-label">Address</label>
+                                        <input type="email" class="form-control" id="inputAddress"
+                                            placeholder="Your Email Address">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="exampleFormControlTextarea1" class="form-label">Example
+                                            textarea</label>
+                                        <textarea class="form-control" placeholder="How can we help?"
+                                            id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact us -->
+
+
+    <div class="call-btn float-end">
+        <a class="btn btn-secondary what" href="https://wa.me/+91"><i class="lab la-whatsapp"></i>Whatsapp</a>
+        <a class="btn btn-secondary" href="tel:+91 82878 82878"><i class="las la-phone me-3"></i>828 788 2878</a>
+    </div>
+    <!-- footer -->
+    <div class="footer ">
+        <div class="container padbot">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-outer">
+                        <a href="index.html">
+                            <img src="images/logo_godrej_properties1.png" style="width: 150px;" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-outer">
+                        <p>
+                            <a href="#"> 9 Saha lane, Kolkata 700 007</a>
+                        </p>
+                        <p>
+                            <a href="tel:+91 82878 82878"> +91 8287882878</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-outer footer-outer-1">
+
+                        <p>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </p>
+                        <p>
+                            <a href="#about">
+                                About Us
+                            </a>
+                        </p>
+                        <p>
+                            <a href="#floor-plan">
+                                Floor Plan
+                            </a>
+                        </p>
+                        <p>
+                            <a href="#gallery">
+                                Gallery
+                            </a>
+                        </p>
+                        <p>
+                            <a href="#amenity">
+                                Amenities
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-outer">
+                        <a href="#">
+                            <div class="bg">
+                                <i class="lab la-twitter"></i>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="bg">
+                                <i class="lab la-facebook-f"></i>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="bg">
+                                <i class="lab la-instagram"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-bottom">
+                        <div class="footer-bottom-inner">
+                            <p>&copy; 2022 - All Right Reserved - Marko &amp; Marndo</p>
+                            <p>Design By : Marko &amp; Brando</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- footer -->
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+        $('.residential-1').owlCarousel({
+            loop: true,
+            margin: 10,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            // items: 3,
+            center: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                600: {
+                    items: 1,
+                    nav: false
+                },
+                1000: {
+                    items: 1,
+                    nav: false,
+                    loop: true
+                }
+            }
+        })
+    </script>
+    <script>
+        $('.advantages-1').owlCarousel({
+            loop: true,
+            margin: 10,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            // items: 3,
+            center: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: false,
+                    loop: true
+                }
+            }
+        })
+    </script>
+    <script>
+        $('.3-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            // items: 3,
+            center: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 1,
+                    nav: false,
+                    loop: true
+                }
+            }
+        })
+    </script>
+    <script>
+        $('.4-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            // items: 3,
+            // center: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 1,
+                    dots: false,
+                    // nav: true,
+                    loop: true
+                }
+            }
+        })
+    </script>
+
+    <script>
+        $('#god').owlCarousel({
+            loop: true,
+            margin: 10,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            items: 3,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: true
+                }
+            }
+        })
+    </script>
+    <script>
+        $('.gallery-1').owlCarousel({
+            loop: true,
+            margin: 10,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            items: 3,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 1,
+                    nav: false
+                },
+                1000: {
+                    items: 1,
+                    nav: false,
+                    loop: true
+                }
+            }
+        })
+    </script>
+    <script>
+        $('.gallery-12').owlCarousel({
+            loop: true,
+            margin: 10,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            items: 3,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 1,
+                    nav: false
+                },
+                1000: {
+                    items: 1,
+                    nav: false,
+                    loop: true
+                }
+            }
+        })
+    </script>
+
+
+
+
+
+
+    <!-- =================================magnific js=================================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"
+        integrity="sha512-C1zvdb9R55RAkl6xCLTPt+Wmcz6s+ccOvcr6G57lbm8M2fbgn2SUjUJbQ13fEyjuLViwe97uJvwa1EUf4F1Akw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+            $('.popup-gallery-1').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                tLoading: 'Loading image #%curr%...',
+                mainClass: 'mfp-img-mobile',
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+                },
+                image: {
+                    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                    titleSrc: function (item) {
+                        return item.el.attr('title');
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.popup-gallery-2').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                tLoading: 'Loading image #%curr%...',
+                mainClass: 'mfp-img-mobile',
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+                },
+                image: {
+                    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                    titleSrc: function (item) {
+                        return item.el.attr('title');
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.popup-gallery-3').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                tLoading: 'Loading image #%curr%...',
+                mainClass: 'mfp-img-mobile',
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+                },
+                image: {
+                    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                    titleSrc: function (item) {
+                        return item.el.attr('title');
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.popup-gallery-4').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                tLoading: 'Loading image #%curr%...',
+                mainClass: 'mfp-img-mobile',
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+                },
+                image: {
+                    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                    titleSrc: function (item) {
+                        return item.el.attr('title');
+                    }
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.popup-gallery-8').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                tLoading: 'Loading image #%curr%...',
+                mainClass: 'mfp-img-mobile',
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+                },
+                image: {
+                    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                    titleSrc: function (item) {
+                        return item.el.attr('title');
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.popup-gallery-10').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                tLoading: 'Loading image #%curr%...',
+                mainClass: 'mfp-img-mobile',
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+                },
+                image: {
+                    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                    titleSrc: function (item) {
+                        return item.el.attr('title');
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.popup-gallery-11').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                tLoading: 'Loading image #%curr%...',
+                mainClass: 'mfp-img-mobile',
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+                },
+                image: {
+                    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                    titleSrc: function (item) {
+                        return item.el.attr('title');
+                    }
+                }
+            });
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        $('.navbar-nav>li>a').on('click', function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+    </script>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
