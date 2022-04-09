@@ -43,6 +43,7 @@ h1 {
 }
 .navbar .navbar-nav a {
   padding: 20px 0;
+  text-transform: uppercase;
 }
 .navbar .navbar-nav .active {
   padding: 20px 0;
