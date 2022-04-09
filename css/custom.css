@@ -935,9 +935,17 @@ h1 {
   .banner .banner-left {
     height: 100vh;
     position: unset;
+    text-align: center;
   }
   .banner .banner-left .banner-left-inner {
     width: 90%;
+  }
+  .banner .banner-left .banner-left-inner .banner-inner-part {
+    width: 100%;
+    border: none;
+  }
+  .banner .banner-left .banner-left-inner .banner-inner-part p {
+    width: 100%;
   }
   .banner .banner-left .banner-left-inner h1 {
     font-size: 73px;
@@ -1029,6 +1037,9 @@ h1 {
   }
   .residential {
     padding-top: 100px;
+  }
+  .residential .t-primary {
+    text-align: left !important;
   }
   .residential .residential-left {
     height: 30vh;
