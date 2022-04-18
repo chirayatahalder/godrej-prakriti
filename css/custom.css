@@ -699,6 +699,14 @@ h1 {
           box-shadow: none;
   border-bottom: 1px solid #000;
 }
+.contact-us .contact-us-right form input:focus-visible,
+.contact-us .contact-us-right form textarea:focus-visible {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0px !important;
+  border: none !important;
+  border-bottom: 1px solid #000;
+}
 .contact-us .contact-us-right form button {
   background: #fff;
   border-radius: 4px;

@@ -95,6 +95,52 @@
     </nav>
 
     <!-- Modal -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">SCHEDULE A PICKUP</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputFname4" class="form-label">First Name *</label>
+                            <input type="email" class="form-control" id="inputFirstName4" placeholder="First Name"
+                                required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputLname4" class="form-label">Last Name *</label>
+                            <input type="text" class="form-control" id="inputlastName4" placeholder="Last Name"
+                                required>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Email *</label>
+                            <input type="Email" class="form-control" id="inputAddress" placeholder="Enter Your Email"
+                                required>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Phone Number *</label>
+                            <input type="tel" pattern="[0-9]{10}" title="Please use a 10 digit telephone number"
+                                maxlength="10" minlength="10" class="form-control" id="inputAddress2"
+                                placeholder="Enter Your Number" required>
+                        </div>
+                        <div class="col-12 w-100 text-center">
+                            <input type="datetime-local" id="dateTime" name="Pick Up Time">
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -236,7 +282,7 @@
                                 <p>Spread over 22 acres comprising of 2 BHK & 3 BHK apartments with excellent
                                     connectivity at Godrej Prakriti</p>
                                 <button type="button" class="btn btn-light" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">SCHEDULE A PICKUP</button>
+                                    data-bs-target="#exampleModal3">SCHEDULE A PICKUP</button>
                             </div>
                         </div>
                     </div>
