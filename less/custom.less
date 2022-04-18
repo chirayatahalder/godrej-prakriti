@@ -688,7 +688,9 @@ h1 {
                     position: relative;
                     display: flex;
                     justify-content: center;
-                    // align-items: center;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 20px;
 
                     // &::before {
                     //     content: '';
@@ -711,7 +713,7 @@ h1 {
                         background: #f3f4f9;
                         border-radius: 50%;
                         flex-shrink: 0;
-                        margin-right: 10px;
+                        // margin-right: 10px;
 
                         i {
                             font-size: 24px;
@@ -724,6 +726,7 @@ h1 {
                             color: var(--primary-color);
                             padding: 0px;
                             margin: 0px;
+                            margin-top: 10px;
                             font-weight: bold;
                         }
 
@@ -766,6 +769,14 @@ h1 {
     .f-plan-outer {
         img {
             height: 500px;
+            width: auto;
+        }
+        .item{
+            display: flex;
+            justify-content: center;
+        }
+        .tab-content>.tab-pane{
+            text-align: center;
         }
 
         ul {
@@ -1181,17 +1192,23 @@ h1 {
             display: none;
         }
     }
+    .col-md-12{
+        .button-63{
+            margin-right: 10px;
+        }
+    }
+    .f-plan {
+        .text-center {
+            text-align: left !important;
+        }
+    }
 
-    .f-plan{
-        .text-center{
+    .location {
+        .text-center {
             text-align: left !important;
         }
     }
-    .location{
-        .text-center{
-            text-align: left !important;
-        }
-    }
+
     .navbar {
         background: var(--primary-color) !important;
         padding: 20px 0 !important;
@@ -1214,15 +1231,17 @@ h1 {
             height: 100vh;
             position: unset;
             text-align: center;
-            
+
             .banner-left-inner {
-                .banner-inner-part{
+                .banner-inner-part {
                     width: 100%;
                     border: none;
-                    p{
+
+                    p {
                         width: 100%;
                     }
                 }
+
                 h1 {
                     font-size: 73px;
                     line-height: 60px;
@@ -1350,7 +1369,8 @@ h1 {
 
     .residential {
         padding-top: 100px;
-        .t-primary{
+
+        .t-primary {
             text-align: left !important;
         }
 
@@ -1478,8 +1498,14 @@ h1 {
 
     .f-plan .f-plan-outer ul {
         border: none;
+        flex-direction: row;
     }
 
+    .f-plan .f-plan-outer ul li{
+        width: 40%;
+    text-align: center;
+    flex-basis: 48%;
+    }
     .f-plan .f-plan-outer ul li .active {
         border-radius: 4px;
     }

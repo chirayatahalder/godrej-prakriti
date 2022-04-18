@@ -530,6 +530,14 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
 }
 .services .services-right .services-right-inner .services-right-card .number .number-1 {
   position: relative;
@@ -548,7 +556,6 @@ h1 {
   border-radius: 50%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  margin-right: 10px;
 }
 .services .services-right .services-right-inner .services-right-card .number .number-1 i {
   font-size: 24px;
@@ -558,6 +565,7 @@ h1 {
   color: var(--primary-color);
   padding: 0px;
   margin: 0px;
+  margin-top: 10px;
   font-weight: bold;
 }
 .services .services-right .services-right-inner .services-right-card .number .number-2 span {
@@ -580,6 +588,18 @@ h1 {
 }
 .f-plan .f-plan-outer img {
   height: 500px;
+  width: auto;
+}
+.f-plan .f-plan-outer .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.f-plan .f-plan-outer .tab-content > .tab-pane {
+  text-align: center;
 }
 .f-plan .f-plan-outer ul {
   display: -webkit-box;
@@ -919,6 +939,9 @@ h1 {
   .advantages .owl-nav {
     display: none;
   }
+  .col-md-12 .button-63 {
+    margin-right: 10px;
+  }
   .f-plan .text-center {
     text-align: left !important;
   }
@@ -1124,6 +1147,16 @@ h1 {
   }
   .f-plan .f-plan-outer ul {
     border: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .f-plan .f-plan-outer ul li {
+    width: 40%;
+    text-align: center;
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
   }
   .f-plan .f-plan-outer ul li .active {
     border-radius: 4px;
